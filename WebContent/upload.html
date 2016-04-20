@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>File Uploading Form</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<style>
+body{
+background:url("server/postback.jpg");
+background-size:cover;
+color:white;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NBAR">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span> 
+</button>
+<a href="#" class="navbar-brand"><B>Cl <span class="glyphicon glyphicon-education"></span> ssroom</B></a>
+</div>
+<div class="collapse navbar-collapse" id="NBAR">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="Profile.jsp"><span class="glyphicon glyphicon-user"></span> Me</a></li>
+
+<li><a href="bagpack.jsp"><span class="glyphicon glyphicon-send"></span> Announcements</a></li>
+<li class="active"><a href="upload.html"><span class="glyphicon glyphicon-king"></span> President's DashBoard</a></li>
+<li><a href="default.jsp"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<br><br>
+
+<div class="row">
+<div class="col-xs-2 col-sm-4"></div>
+<div class="col-xs-8 col-sm-4">
+<h2> Write New Post :</h2>
+<br><br>
+<form action="upload.jsp" method="post"
+                        enctype="multipart/form-data">
+<div class="form-group">
+
+<input class="form-control" type="text" name="subject" placeholder="Subject">
+</div>
+<div class="form-group">
+<textarea name="description" class="form-control" placeholder="Description" rows="10"></textarea>
+</div>
+<div class="form-group">
+<label for="file">Choose any files to Upload : -</label>
+<input type="file" class="form-control" name="file" size="50" multiple="multiple"/>
+</div>
+<br />
+<div class="form-group">
+<input type="submit" class="form-control btn btn-primary" value="Post" />
+</div>
+</form>
+
+</div>
+</div>
+
+</body>
+</html>
